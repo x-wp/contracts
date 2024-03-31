@@ -1,6 +1,7 @@
 {
   "name": "x-wp/contracts",
   "description": "A set of abstractions for xWP components",
+  "license": "GPL-2.0-only",
   "type": "library",
   "keywords": [
     "abstractions",
