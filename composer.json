@@ -1,0 +1,33 @@
+{
+  "name": "x-wp/contracts",
+  "description": "A set of abstractions for xWP components",
+  "keywords": [
+    "abstractions",
+    "contracts",
+    "decoupling",
+    "interfaces",
+    "interoperability",
+    "standards",
+    "extended-wp"
+  ],
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "XWP\\Contracts\\": ""
+    }
+  },
+  "require": {
+    "php": ">=8.1"
+  },
+  "require-dev": {
+    "oblak/wordpress-coding-standard": "^1"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "replace": {
+    "x-wp/hook-contracts": "self.version"
+  }
+}
