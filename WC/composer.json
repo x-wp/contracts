@@ -1,6 +1,6 @@
 {
-  "name": "x-wp/contracts",
-  "description": "A set of abstractions for xWP components",
+  "name": "x-wp/wc-contracts",
+  "description": "Generic abstractions related to WooCommerce classes",
   "license": "GPL-2.0-only",
   "type": "library",
   "keywords": [
@@ -10,7 +10,8 @@
     "interfaces",
     "interoperability",
     "standards",
-    "extended-wp"
+    "extended-wp",
+    "woocommerce"
   ],
   "authors": [
     {
@@ -21,27 +22,14 @@
   "require": {
     "php": ">=8.1"
   },
-  "require-dev": {
-    "oblak/wordpress-coding-standard": "^1"
-  },
-  "replace": {
-    "x-wp/hook-contracts": "self.version",
-    "x-wp/wc-contracts": "self.version"
-  },
   "suggest": {
     "automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "autoload": {
-    "psr-4": {
-      "XWP\\Contracts\\": ""
-    },
     "classmap": [
-      "WC/"
+      ""
     ]
-  },
-  "config": {
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
-    }
   }
 }
